@@ -1,0 +1,72 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-toto: rgba(218, 15, 15, 0.25);
+    --color-titi: #e69597;
+    --color-tutu: rgb(168, 43, 43);
+    --color-tata: #b86660;
+    --color-tete: rgb(104, 6, 6);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    justify-content: space-between;
+    background-color: var(--color-toto);
+}
+
+#navbar header {
+    font-size: 30px;
+    margin-left: 30px;
+    line-height: 60px;
+    pointer-events: none;
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+li {
+    width: 100px;
+    border: 1px solid #000;
+    transform: skew(-35deg);
+    margin: 5px;
+    border-radius: 8px;
+    line-height: 50px;
+    background-color: var(--color-tete);
+}
+
+li:hover {
+    background-color: var(--color-tutu);
+}
+
+.unskew {
+    display: block;
+    transform: skew(35deg);
+    text-align: center;
+}
+
+#navbar ul a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+#navbar ul a:hover {
+    font-size: 16px;
+    transition: all 0.5s;
+}
