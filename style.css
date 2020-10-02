@@ -7,8 +7,8 @@
 }
 
 :root {
-    --color-toto: rgba(218, 15, 15, 0.25);
-    --color-titi: #e69597;
+    --color-toto: rgba(218, 15, 15, 0.4);
+    --color-titi: #520809;
     --color-tutu: rgb(168, 43, 43);
     --color-tata: #b86660;
     --color-tete: rgb(104, 6, 6);
@@ -24,14 +24,15 @@ body {
     width: 100vw;
     height: 60px;
     justify-content: space-between;
-    background-color: var(--color-toto);
 }
 
 #navbar header {
-    font-size: 30px;
+    font-size: 35px;
     margin-left: 30px;
     line-height: 60px;
     pointer-events: none;
+    color: var(--color-titi);
+    border-bottom: 5px double var(--color-titi);
 }
 
 #navbar ul {
@@ -68,5 +69,46 @@ li:hover {
 
 #navbar ul a:hover {
     font-size: 16px;
+    transition: all 0.5s;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("vintage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+#welcome-section h1 {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 45px;
+    line-height: 80px;
+    text-align: center;
+    color: var(--color-titi);
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+#my-resume {
+    font-size: 15px;
+    color: #fff;
+    width: 250px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: var(--color-tete);
+    transition: all 0.5s;
+}
+
+#my-resume:hover {
+    background-color: var(--color-tutu);
+    font-size: 18px;
     transition: all 0.5s;
 }
