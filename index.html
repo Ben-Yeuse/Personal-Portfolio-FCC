@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ben Yeuse</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
         <header>Ben&nbsp;Yeuse</header>
         <ul>
             <li>
-                <a href=""><span class="unskew">About</span></a>
+                <a href="#welcome-section"><span class="unskew">About</span></a>
             </li>
             <li>
-                <a href=""><span class="unskew">Projects</span></a>
+                <a href="#projects"><span class="unskew">Projects</span></a>
             </li>
             <li>
-                <a href=""><span class="unskew">Contact</span></a>
+                <a href="#personal-media"><span class="unskew">Contact</span></a>
             </li>
         </ul>
     </nav>
@@ -26,7 +27,34 @@
             <h1>Full-stack web developer
             <br id="h1-first-br" />&amp;
             <br id="h1-second-br" />Web entrepreneur</h1>
-            <button id="my-resume" type="button">My resume</button>
+            <button id="my-resume" type="button">My resume <span id="button-arrow">&#8250;</span></button>
+        </section>
+        <section id="projects">
+            <header><span id="my-work">My work</span></header>
+            <figure class="project-tile">
+                <img src="Media/Technical-Documentation-Page.png" alt="">
+                <figcaption><a href="https://github.com/Ben-Yeuse/Technical-Documentation-Page-FCC" target="_blank">Technical Documentation Page <span class="tile-arrow">&#8250;</span></a></figcaption>
+            </figure>
+            <figure class="project-tile">
+                <img src="Media/Product-Landing-Page.png" alt="">
+                <figcaption><a href="https://github.com/Ben-Yeuse/Product-Landing-Page-FCC" target="_blank">Product Landing Page <span class="tile-arrow">&#8250;</span></a></figcaption>
+            </figure>
+            <figure class="project-tile">
+                <img src="Media/Survey-Form.png" alt="">
+                <figcaption><a href="https://github.com/Ben-Yeuse/Survey-Form-FCC" target="_blank">Survey Form <span class="tile-arrow">&#8250;</span></a></figcaption>
+            </figure>
+            <figure class="project-tile">
+                <img src="Media/Tribute-Page.png" alt="">
+                <figcaption><a href="https://github.com/Ben-Yeuse/TributePage" target="_blank">Tribute Page <span class="tile-arrow">&#8250;</span></a></figcaption>
+            </figure>
+        </section>
+        <section id="personal-media">
+            <header><span id="my-medias">My medias</span></header>
+            <div id="media-logos">
+                <a href="#"><img src="Media/linkedin-logo-75px.png" alt="Linkedin logo"></a>
+                <a href="#"><img src="Media/email-logo-75px.png" alt="Email logo"></a>
+                <a id="profile-link" href="https://github.com/Ben-Yeuse" target="_blank"><img src="Media/github-logo-75px.png" alt="Github logo"></a>
+            </div>
         </section>
     </main>
 </body>

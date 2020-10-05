@@ -7,15 +7,16 @@
 }
 
 :root {
-    --color-toto: rgba(218, 15, 15, 0.4);
+    --color-toto: rgba(218, 15, 15, 0.2);
     --color-titi: #520809;
     --color-tutu: rgb(168, 43, 43);
-    --color-tata: #b86660;
+    --color-tata: #2b0805;
     --color-tete: rgb(104, 6, 6);
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
 }
 
 #navbar {
@@ -24,6 +25,7 @@ body {
     width: 100vw;
     height: 60px;
     justify-content: space-between;
+    z-index: 1;
 }
 
 #navbar header {
@@ -64,21 +66,21 @@ li:hover {
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 #navbar ul a:hover {
     font-size: 16px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 #welcome-section {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 60px);
+    height: 100vh;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url("vintage.jpg");
+    background-image: url("Media/vintage.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -91,24 +93,128 @@ li:hover {
     font-size: 45px;
     line-height: 80px;
     text-align: center;
-    color: var(--color-titi);
+    color: var(--color-tata);
+    background-color: var(--color-toto);
     padding: 0 15px;
     border-radius: 5px;
+    pointer-events: none;
 }
 
 #my-resume {
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
     color: #fff;
     width: 250px;
     height: 40px;
     border: 1px solid #000;
     border-radius: 5px;
     background-color: var(--color-tete);
-    transition: all 0.5s;
+    transition: all 0.3s;
+}
+
+#button-arrow {
+    display: inline-block;
+    font-size: 22px;
+    padding-left: 8px;
+    margin-bottom: 2px;
 }
 
 #my-resume:hover {
     background-color: var(--color-tutu);
-    font-size: 18px;
-    transition: all 0.5s;
+    font-size: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#my-resume:hover #button-arrow {
+    font-size: 24px;
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: linear-gradient(-35deg,wheat, white, wheat);
+}
+
+#projects header {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+    pointer-events: none;
+    color: var(--color-titi);
+}
+
+#my-work {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-titi);
+}
+
+.project-tile {
+    width: 45vw; 
+    height: calc(45vw * 0.5625);/* *0.5625 => 16:9 aspect ratio */
+    margin-bottom: 100px;
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--color-tutu);
+    box-shadow: 7px 7px 5px var(--color-tata);
+}
+
+.tile-arrow {
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 4px;
+}
+
+#projects figcaption a {
+    transition: all 0.3s;
+    color: var(--color-titi);
+}
+
+#projects figcaption a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+#personal-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: wheat;
+}
+
+#personal-media header {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+    pointer-events: none;
+    color: var(--color-titi);
+}
+
+#my-medias {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-titi);
+}
+
+#media-logos {
+    margin-bottom: 50px;
+}
+
+#media-logos a {
+    display: inline-block;
+    margin: 0 50px;
+    transition: all 0.3s;
+    transform: scale(0.7);
+}
+
+#media-logos a:hover {
+    transform: scale(1);
+    transition: all 0.3s;
 }
